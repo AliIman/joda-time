@@ -5,7 +5,7 @@ import org.joda.time.chrono.ISOChronology;
 import static org.joda.time.chrono.ISOChronology.getInstance;
 import static junit.framework.Assert.fail;
 public class TestBasicsTestGet_DateTimeFieldTemplate {
-  public static <TInstant extends AbstractInstant>void testBasicsTestGet_DateTimeFieldTemplate(  Class<TInstant> clazzTInstant) throws Exception {
+  public static <TInstant extends AbstractInstant> void testBasicsTestGet_DateTimeFieldTemplate(Class<TInstant> clazzTInstant) throws Exception {
     TInstant test=clazzTInstant.newInstance();
     assertEquals(1,test.get(ISOChronology.getInstance().era()));
     assertEquals(20,test.get(ISOChronology.getInstance().centuryOfEra()));
@@ -33,7 +33,7 @@ public class TestBasicsTestGet_DateTimeFieldTemplate {
       test.get((DateTimeField)null);
       fail();
     }
- catch (    IllegalArgumentException ex) {
+    catch (IllegalArgumentException ex) {
     }
   }
 }
