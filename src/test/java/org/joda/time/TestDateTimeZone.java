@@ -868,6 +868,7 @@ public class TestDateTimeZone extends TestCase {
         }
     }
 
+    //-----------------------------------------------------------------------
     public void testGetOffset_long() {
         this.testDateTimeZoneTestGetTemplate("Europe/Paris", 2L, 2L, false);
     }
