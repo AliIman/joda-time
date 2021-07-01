@@ -864,6 +864,7 @@ public class TestDateTimeFormat extends TestCase {
         assertEquals(dt, f.parseDateTime("2004/03/09"));
     }
 
+    //-----------------------------------------------------------------------
     public void testParse_pivotYear() {
         this.testDateTimeFormatTestParse_pivotYearTemplate("dd.MM.yy", 2015, 2000, 2099);
     }
@@ -1011,6 +1012,7 @@ public class TestDateTimeFormat extends TestCase {
         check(date, 2007, 1, 1);
     }
 
+    //-----------------------------------------------------------------------
     public void testFormatParse_textEraAD_UK() {
         this.testDateTimeFormatTestFormatParse_textEraAD_Template(Locale.UK, "$AD2007");
     }

@@ -85,6 +85,7 @@ public class TestTextFields extends TestCase {
         originalLocale = null;
     }
 
+    //-----------------------------------------------------------------------
     public void testMonthNames_monthStart() {
         this.testTextFieldsTestMonthNames_monthTemplate(1, 1);
     }
