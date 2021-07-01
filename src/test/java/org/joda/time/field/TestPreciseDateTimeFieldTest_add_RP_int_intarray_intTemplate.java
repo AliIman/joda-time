@@ -5,7 +5,8 @@ import java.util.Arrays;
 import static java.util.Arrays.equals;
 import static junit.framework.Assert.fail;
 public class TestPreciseDateTimeFieldTest_add_RP_int_intarray_intTemplate {
-  public static <TMockStandardDateTimeField extends BaseDateTimeField>void testPreciseDateTimeFieldTest_add_RP_int_intarray_intTemplate(  Class<TMockStandardDateTimeField> clazzTMockStandardDateTimeField) throws Exception {
+  public static <TMockStandardDateTimeField extends BaseDateTimeField> void testPreciseDateTimeFieldTest_add_RP_int_intarray_intTemplate(
+            Class<TMockStandardDateTimeField> clazzTMockStandardDateTimeField) throws Exception {
     int[] values=new int[]{10,20,30,40};
     int[] expected=new int[]{10,20,30,40};
     BaseDateTimeField field=clazzTMockStandardDateTimeField.newInstance();
@@ -23,8 +24,7 @@ public class TestPreciseDateTimeFieldTest_add_RP_int_intarray_intTemplate {
     try {
       field.add(new TimeOfDay(),2,values,30);
       fail();
-    }
- catch (    IllegalArgumentException ex) {
+    } catch (IllegalArgumentException ex) {
     }
     values=new int[]{10,20,30,40};
     expected=new int[]{10,20,29,40};
@@ -38,8 +38,7 @@ public class TestPreciseDateTimeFieldTest_add_RP_int_intarray_intTemplate {
     try {
       field.add(new TimeOfDay(),2,values,-31);
       fail();
-    }
- catch (    IllegalArgumentException ex) {
+    } catch (    IllegalArgumentException ex) {
     }
   }
 }

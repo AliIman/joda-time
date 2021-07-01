@@ -179,4 +179,5 @@ public class TestConverterSet extends TestCase {
         } catch (IndexOutOfBoundsException ex) {}
         assertEquals(4, set.size());
     }
+
 }
