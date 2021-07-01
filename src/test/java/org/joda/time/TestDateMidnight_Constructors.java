@@ -448,7 +448,6 @@ public class TestDateMidnight_Constructors extends TestCase {
         assertEquals(TEST_TIME_NOW_LONDON, test.getMillis());
     }
 
-
     /**
      * Test constructor (Object, Chronology)
      */
