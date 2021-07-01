@@ -957,6 +957,7 @@ public class TestDateTimeZone extends TestCase {
 //        assertEquals(false, zone.isLocalDateTimeOverlap(new LocalDateTime(2007, 12, 24, 12, 34)));
 //    }
 
+    //-----------------------------------------------------------------------
     public void testIsLocalDateTimeGap_Berlin() {
         this.testDateTimeZoneTestIsLocalDateTimeGap_Template("Europe/Berlin", 25, 25, 25, 25, 25, 25, 25, 10, 28, 10, 28, 10, 28, 3);
     }
