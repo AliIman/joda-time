@@ -618,6 +618,7 @@ public class TestInterval_Constructors extends TestCase {
         } catch (IllegalArgumentException ex) {}
     }
 
+    //-----------------------------------------------------------------------
     public void testConstructor_Object1() throws Throwable {
         TestInterval_ConstructorsTestConstructor_Object1Template.testInterval_ConstructorsTestConstructor_Object1Template(Interval.class);
     }
